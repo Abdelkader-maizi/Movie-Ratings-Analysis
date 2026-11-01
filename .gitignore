@@ -33,4 +33,4 @@ data/processed/*
 # Generated figures
 figures/*
 !figures/*.png
-EOF
+EOF.~lock.*#
