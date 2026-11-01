@@ -78,7 +78,34 @@ def plot_top_10_movies():
 
     plt.show()
 
+def plot_year_rating_relationship():
+    """Visualize the relationship between release year and movie rating."""
+
+    plt.figure(figsize=(10, 6))
+
+    sns.regplot(
+        data=df,
+        x="year",
+        y="rating",
+        scatter_kws={"alpha": 0.7},
+        line_kws={"color": "red"}
+    )
+
+    plt.title("Relationship Between Release Year and Movie Rating")
+    plt.xlabel("Release Year")
+    plt.ylabel("Movie Rating")
+
+    plt.tight_layout()
+
+    plt.savefig(
+        "figures/year_rating_relationship.png",
+        dpi=300
+    )
+
+    plt.show()
+
 if __name__ == "__main__":
     plot_rating_distribution()
     plot_average_rating_by_decade()
     plot_top_10_movies()
+    plot_year_rating_relationship()
