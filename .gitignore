@@ -1,0 +1,36 @@
+cat > .gitignore << 'EOF'
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+
+# Environment variables and secrets
+.env
+
+# Raw data
+data/raw/*
+!data/raw/movies.csv
+!data/raw/movie_details.csv
+data/raw/movie_details_test.csv
+
+# Processed data
+data/processed/*
+!data/processed/movies_cleaned.csv
+
+# Generated figures
+figures/*
+!figures/*.png
+EOF
