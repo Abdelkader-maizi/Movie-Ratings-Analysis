@@ -1,10 +1,3 @@
-
-"""
-Movie Ratings Analysis
-Module: Web Scraping
-Description: Extract details from 100 Letterboxd movie pages.
-"""
-
 import re
 import time
 import requests
